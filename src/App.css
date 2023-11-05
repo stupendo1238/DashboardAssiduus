@@ -1,0 +1,155 @@
+*{
+  margin:0;
+  padding:0;
+ }
+body{
+  width:100vw;
+  height:100vh;
+  background-color:#dedede;
+}
+.sidebar{
+  display:flex;
+  flex-direction:column;
+  width:15vw;
+  height:100vh;
+  background-color:white;
+}
+.logo{
+  height:30px;
+  width:140px;
+  margin:3vh auto 5vh auto;
+}
+li{
+  padding:2vh 8vh;
+  list-style:none;
+  font-size:14px;
+  font-weight:600;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+li:hover{
+  background-color:#4bd269;
+}
+li:hover a{
+  color:white;
+  text-decoration:none;
+}
+.header{
+  background-color:white;
+  height:60px;
+  width:85vw;
+  display:flex;
+  align-items:center;
+  justify-content:right;
+  gap:18px;
+  padding-right:45px;
+}
+.searchbar{
+  position:relative;
+  height:35px;
+  padding:2px 10px;
+  border:none;
+  background-color:#ededed;
+  border-radius:8px;
+  color:grey;
+}
+.searchbar:focus{
+  outline:none;
+}
+.profile{
+  height:30px;
+  width:30px;
+  border-radius:50%;
+  margin-left:20px;
+}
+.rightcontent{
+  display:flex;
+  height:100vh;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  flex-direction:column;
+}
+.firstgraph{
+  background-color:white;
+  padding:0 15px 30px 15px;
+  border-radius:6px;
+}
+.linechart .domain{
+  display:none;
+}
+.dropdownbox{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px;
+  font-size:14px;
+}
+.firstdown{
+  margin-right:15px;
+  border-radius:6px;
+  border:1px solid darkgray;
+  padding:1px 10px;
+}
+.seconddown{
+  border-radius:6px;
+  border:1px solid darkgray;
+  padding:1px 8px;
+}
+.firstrow,.secondrow{
+  margin-top:30px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:space-evenly;
+}
+.btn1{
+  color:#29ab87;
+  border:none;
+  background:#e3edfd;
+  padding:4px 10px;
+  font-size:12px;
+  font-weight:600;
+  border-radius:5px;
+}
+.files{
+  font-size:13px;
+  border-radius:3px;
+  padding:1px;
+}
+.table-container {
+  width: 100%;
+  padding-left:18px;
+  overflow: hidden;
+}
+
+.custom-table {
+  width: 100%;
+  padding:18px;
+}
+
+th,td { /* Increased padding */
+  text-align: left;
+}
+th{
+  color:grey;
+  font-size:12px;
+  font-weight:normal;
+  padding:6px 0;
+}
+td{
+  font-size:11px;
+  padding:4px 0;
+  color:black;
+  font-weight:600;
+}
+@media screen and (max-width:1200px){
+  .sidebar{
+    width:28vw;
+  }
+  .header{
+    width:80vw;
+    padding:4vh;
+  }
+}
